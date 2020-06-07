@@ -1,0 +1,27 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "description": "Backend Chat IO runtimehandler",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ryannograles/Chat.IO.git"
+  },
+  "author": "RYAN NOGRALES",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ryannograles/Chat.IO/issues"
+  },
+  "homepage": "https://github.com/ryannograles/Chat.IO#readme",
+  "dependencies": {
+    "concurrently": "^5.2.0",
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "nodemon": "^2.0.4",
+    "socket.io": "^2.3.0"
+  }
+}
