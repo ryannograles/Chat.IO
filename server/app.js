@@ -5,7 +5,7 @@ const http = require('http');
 require("dotenv").config(); 
 
 // set app port
-const PORT = process.env.PORT || 5000
+const PORT = process.env.PORT
 
 // setting up the connection
 // setting socket server
