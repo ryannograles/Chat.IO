@@ -4,8 +4,8 @@ import './App.css';
 // router
 import { BrowserRouter as Router, Route } from 'react-router-dom';
 // components
-import ChatApp from './components/chat/ChatApp';
-import RoomSelect from './components/chat/RoomSelect';
+import ChatApp from './components/ChatUI/Chat/ChatApp';
+import RoomSelect from './components/ChatUI/Room/RoomSelect';
 
 const App = () => (
   <Router>

@@ -1,0 +1,78 @@
+@import '../../../scss/config';
+
+.outer-container {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    background-color: $secondary-color;
+    .card-outer-holder {
+        position: absolute;
+        top: 25%;
+        left: 32%;
+        width: 500px;
+        padding: 10px;
+        background-color: $primary-color;
+        border-radius: 10px;
+        box-shadow: $main-shadow 0px 3px 6px;
+        .header-center {
+            text-align: center;
+            font-size: 25px;
+            font-weight: 100;
+            color: white;
+            margin-bottom: 10px;
+            span {
+                color: $tertiary-color;
+                font-weight: 900;
+            }
+        }
+    }
+}
+.form-container {
+    display: flex;
+    flex-direction: row;
+    margin-left: 10px;
+    flex-grow: 1;
+    .form-holder{
+        flex-grow: 1;
+        display: flex;
+        flex-direction: column;
+        margin-right: 10px;
+        margin-bottom: 50px;
+        .form-input {
+            width: 100%;
+            outline: none;
+            border-radius: 5px;
+            height: calc(2.5em + 1.5rem + 5px);
+            transition: all 0.25s;
+            padding: 16px 0px 3px 12px;
+            background-color: $secondary-color;
+            color: white;
+            transition: all .25s ease-in-out;
+            box-shadow: $main-shadow 0px 3px 6px;
+        }
+        label {
+            color: white;
+            font-weight: 600;
+            letter-spacing: .5px;
+            font-size: 11px; 
+            margin-top: -55px;
+            margin-left: 10px;
+            text-align: start;
+        }
+    }
+}
+.button-holder {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    .form-button {
+        background-color: $tertiary-color;
+        color: white;
+        outline: none;
+        @extend .button;
+        &:hover {
+            cursor: pointer;
+        }
+    }
+}
