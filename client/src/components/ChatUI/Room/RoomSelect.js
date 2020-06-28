@@ -4,6 +4,8 @@ import { Link } from 'react-router-dom';
 import Input from '../../Utils/Input';
 import Inputholder from '../../Utils/Inputholder';
 import Button from '../../Utils/Button';
+// import icons
+import { BsFillChatDotsFill } from 'react-icons/bs';
 // import style sheet
 import './RoomSelect.scss';
 
@@ -17,6 +19,7 @@ const RoomSelect = () => {
     return(
         <div className="outer-container">
             <div className="card-outer-holder">
+                <BsFillChatDotsFill />
                 <h3 className="header-center"><span>STALK</span> Messages</h3>
                 <Inputholder classnames="form-container">
                     <Input 

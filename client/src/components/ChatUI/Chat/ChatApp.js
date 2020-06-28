@@ -1,11 +1,23 @@
-import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
+import React, { useState, useEffect } from 'react';
+import queryString from 'query-string';
+import io from 'socket.io-client';
 
-const ChatApp = () => {
+const ChatApp = ({ location }) => {
+
+    // * Create a state data for user who joins the chat app
+    const [name, setName] = useState('');
+    const [room, setRoom] = useState('');
+
+    useEffect(() => {
+        const { name , room } = queryString.parse(location.search);
+        // * set the user name and room
+        setName(name);
+        setRoom(room);
+    });
 
     return (
         <div>
-            <h1>On Chat Room</h1>
+            <h1>{`Hi ${name}!`}</h1>
         </div>
     )
 }
